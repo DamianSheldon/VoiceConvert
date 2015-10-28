@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26355C47D7BA721659F98516558E9168 /* dec_if.h in Headers */ = {isa = PBXBuildFile; fileRef = D134C5EA08267107E0E134420A96FAD9 /* dec_if.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		295B6B6FBB6A6F621202FA795827966D /* Pods-VoiceConvertDevApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5733F7051184BCD4235F05C6775C67 /* Pods-VoiceConvertDevApp-dummy.m */; };
+		3ABD7B2E7760C130C3B518824DB136B4 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F605E64A40133A4D50AF9E7B349F7D4 /* wav.mm */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		46809597D9F196EC596D0247F5BA0BE4 /* amrFileCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B1944E811CC600F00AA8AD6165044F1 /* amrFileCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		472FB4F2E4AA12924EDA656A0528463C /* wav.h in Headers */ = {isa = PBXBuildFile; fileRef = 247AE7F2B2618EB33DD63B916E688804 /* wav.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		493345EE732D3663D07C479D8AB31149 /* VoiceConvert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DEDC685BD218FE39A775250C31687B /* VoiceConvert-dummy.m */; };
+		4EA2FC14F43A983003DA938F86BA1EC6 /* if_rom.h in Headers */ = {isa = PBXBuildFile; fileRef = 855543165BDFBE6F39630B33FBE0BB92 /* if_rom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F99D756208A5427ED0B9B75190EDBEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		705476A6595297FEF7ED4052C7AAD831 /* interf_dec.h in Headers */ = {isa = PBXBuildFile; fileRef = 97F8DEADF84F236C109E924B3D2E432B /* interf_dec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95D337907E5F55024ED4F95763195580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		A6AD5EE6AFC814CF529B39C20D270805 /* interf_enc.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AD56068396615A9EBB5F8A70222579 /* interf_enc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D568FFCA65BCD6FFBED8AE6209EFF401 /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = E549F89CB32D2E98200CF4152EC28422 /* VoiceConverter.mm */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E8C14F35C11ABB36DF2B034AB1E80B5C /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 825423E8282FBDEDE0F55E347C12CFD7 /* amrFileCodec.mm */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FA5C47A796B10DB9195CA94A92B72DA4 /* VoiceConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = D91929FFA696F42346D177EA1B89A778 /* VoiceConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BF1F1CCE00CC605BB9C0E1F101D463E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256FD9C9069244B8A20C1470EE8B5F2C;
+			remoteInfo = VoiceConvert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		061A3E563B6003F2E2BE21DE3639CF72 /* libPods-VoiceConvertDevApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VoiceConvertDevApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		247AE7F2B2618EB33DD63B916E688804 /* wav.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		45AD56068396615A9EBB5F8A70222579 /* interf_enc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		4AD1D5A7C7A70154B4D411110DB325ED /* Pods-VoiceConvertDevApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VoiceConvertDevApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6C79C90EA4AE44EEE56D12BA9596B127 /* libopencore-amrwb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrwb.a"; path = "VoiceConvert/VoiceConvert/lib/libopencore-amrwb.a"; sourceTree = "<group>"; };
+		78EAF376E39FA2058F6D2DCF0EC2E3F2 /* Pods-VoiceConvertDevApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoiceConvertDevApp-frameworks.sh"; sourceTree = "<group>"; };
+		80DAE6BFDE6EFD6193EC3D0FCCD41383 /* libopencore-amrnb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "VoiceConvert/VoiceConvert/lib/libopencore-amrnb.a"; sourceTree = "<group>"; };
+		825423E8282FBDEDE0F55E347C12CFD7 /* amrFileCodec.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		855543165BDFBE6F39630B33FBE0BB92 /* if_rom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		8B1944E811CC600F00AA8AD6165044F1 /* amrFileCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		8F605E64A40133A4D50AF9E7B349F7D4 /* wav.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		97F8DEADF84F236C109E924B3D2E432B /* interf_dec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		A57F4E05E22258948C35ABA6F0B656D3 /* VoiceConvert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VoiceConvert-prefix.pch"; sourceTree = "<group>"; };
+		A590ED930C4D4F20FEDA66DDD53F17F0 /* VoiceConvert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VoiceConvert.xcconfig; sourceTree = "<group>"; };
+		B1583BE1086197E26B81E9E9ADFD9A4D /* Pods-VoiceConvertDevApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoiceConvertDevApp-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C49844022BD10DE1522D982C6DC20602 /* Pods-VoiceConvertDevApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VoiceConvertDevApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		CD99209786923DBE01897F9BD6CB0535 /* libVoiceConvert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVoiceConvert.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D134C5EA08267107E0E134420A96FAD9 /* dec_if.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		D7CFE50D73322F5599F809B55FBF6A4D /* Pods-VoiceConvertDevApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoiceConvertDevApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D84005DB8A6DAB07CF9D8351CBFBF332 /* Pods-VoiceConvertDevApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoiceConvertDevApp.release.xcconfig"; sourceTree = "<group>"; };
+		D91929FFA696F42346D177EA1B89A778 /* VoiceConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		DB5733F7051184BCD4235F05C6775C67 /* Pods-VoiceConvertDevApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VoiceConvertDevApp-dummy.m"; sourceTree = "<group>"; };
+		E549F89CB32D2E98200CF4152EC28422 /* VoiceConverter.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		F4DEDC685BD218FE39A775250C31687B /* VoiceConvert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VoiceConvert-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25B38AFD0AF1EF66FCE07E825E79E290 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F99D756208A5427ED0B9B75190EDBEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1123CBF2D0A5F87BA9042246B197574 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D337907E5F55024ED4F95763195580 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B8E8EDF9D7CC54B74C06CA05DD8C1AD /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				4EFBE9102D260B6722EAA1CC4320C72F /* VoiceConvert */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		1D4F185ADA794CC2EB50E48FDEC7A96D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C29258BFFE96085B570C8FD5660CE0D9 /* Pods-VoiceConvertDevApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4EFBE9102D260B6722EAA1CC4320C72F /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				D91929FFA696F42346D177EA1B89A778 /* VoiceConverter.h */,
+				E549F89CB32D2E98200CF4152EC28422 /* VoiceConverter.mm */,
+				554007EC276CAC3C124B356A603FF5E3 /* amrwapper */,
+				9021D6F1B7623ACB859BE0BB422F4C50 /* opencore-amrnb */,
+				F9E7B3694F7ED83018126BC79D2EEEE9 /* opencore-amrwb */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		554007EC276CAC3C124B356A603FF5E3 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				8B1944E811CC600F00AA8AD6165044F1 /* amrFileCodec.h */,
+				825423E8282FBDEDE0F55E347C12CFD7 /* amrFileCodec.mm */,
+				247AE7F2B2618EB33DD63B916E688804 /* wav.h */,
+				8F605E64A40133A4D50AF9E7B349F7D4 /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		58F6B5460096CD53095B5BE9B553B623 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A590ED930C4D4F20FEDA66DDD53F17F0 /* VoiceConvert.xcconfig */,
+				F4DEDC685BD218FE39A775250C31687B /* VoiceConvert-dummy.m */,
+				A57F4E05E22258948C35ABA6F0B656D3 /* VoiceConvert-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "VoiceConvertDevApp/Pods/Target Support Files/VoiceConvert";
+			sourceTree = "<group>";
+		};
+		62DD0C114AC3A742277308708D960F9A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D3FD4E9FC9B7A204CF6A038C53AF560 /* VoiceConvert */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		655B2E208A6C89101BC2FEC9FC5A1CE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80DAE6BFDE6EFD6193EC3D0FCCD41383 /* libopencore-amrnb.a */,
+				6C79C90EA4AE44EEE56D12BA9596B127 /* libopencore-amrwb.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D3FD4E9FC9B7A204CF6A038C53AF560 /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				655B2E208A6C89101BC2FEC9FC5A1CE0 /* Frameworks */,
+				58F6B5460096CD53095B5BE9B553B623 /* Support Files */,
+				1B8E8EDF9D7CC54B74C06CA05DD8C1AD /* VoiceConvert */,
+			);
+			name = VoiceConvert;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				62DD0C114AC3A742277308708D960F9A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DBC55730BE5691F72AFBBF30B700AF5B /* Products */,
+				1D4F185ADA794CC2EB50E48FDEC7A96D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9021D6F1B7623ACB859BE0BB422F4C50 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				97F8DEADF84F236C109E924B3D2E432B /* interf_dec.h */,
+				45AD56068396615A9EBB5F8A70222579 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C29258BFFE96085B570C8FD5660CE0D9 /* Pods-VoiceConvertDevApp */ = {
+			isa = PBXGroup;
+			children = (
+				4AD1D5A7C7A70154B4D411110DB325ED /* Pods-VoiceConvertDevApp-acknowledgements.markdown */,
+				C49844022BD10DE1522D982C6DC20602 /* Pods-VoiceConvertDevApp-acknowledgements.plist */,
+				DB5733F7051184BCD4235F05C6775C67 /* Pods-VoiceConvertDevApp-dummy.m */,
+				78EAF376E39FA2058F6D2DCF0EC2E3F2 /* Pods-VoiceConvertDevApp-frameworks.sh */,
+				B1583BE1086197E26B81E9E9ADFD9A4D /* Pods-VoiceConvertDevApp-resources.sh */,
+				D7CFE50D73322F5599F809B55FBF6A4D /* Pods-VoiceConvertDevApp.debug.xcconfig */,
+				D84005DB8A6DAB07CF9D8351CBFBF332 /* Pods-VoiceConvertDevApp.release.xcconfig */,
+			);
+			name = "Pods-VoiceConvertDevApp";
+			path = "Target Support Files/Pods-VoiceConvertDevApp";
+			sourceTree = "<group>";
+		};
+		DBC55730BE5691F72AFBBF30B700AF5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				061A3E563B6003F2E2BE21DE3639CF72 /* libPods-VoiceConvertDevApp.a */,
+				CD99209786923DBE01897F9BD6CB0535 /* libVoiceConvert.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9E7B3694F7ED83018126BC79D2EEEE9 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				D134C5EA08267107E0E134420A96FAD9 /* dec_if.h */,
+				855543165BDFBE6F39630B33FBE0BB92 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C4E20976C4669B8978AF519171417FA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46809597D9F196EC596D0247F5BA0BE4 /* amrFileCodec.h in Headers */,
+				26355C47D7BA721659F98516558E9168 /* dec_if.h in Headers */,
+				4EA2FC14F43A983003DA938F86BA1EC6 /* if_rom.h in Headers */,
+				705476A6595297FEF7ED4052C7AAD831 /* interf_dec.h in Headers */,
+				A6AD5EE6AFC814CF529B39C20D270805 /* interf_enc.h in Headers */,
+				FA5C47A796B10DB9195CA94A92B72DA4 /* VoiceConverter.h in Headers */,
+				472FB4F2E4AA12924EDA656A0528463C /* wav.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		013360C320A733D39D0688BC91CF9EF1 /* Pods-VoiceConvertDevApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F240E32B4A95DA9C1FCD1F2D404EA430 /* Build configuration list for PBXNativeTarget "Pods-VoiceConvertDevApp" */;
+			buildPhases = (
+				D30F99B3F02BD4089385111FAA76F1FF /* Sources */,
+				25B38AFD0AF1EF66FCE07E825E79E290 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61FD2887935AFE4008A3C3CDFCCB7177 /* PBXTargetDependency */,
+			);
+			name = "Pods-VoiceConvertDevApp";
+			productName = "Pods-VoiceConvertDevApp";
+			productReference = 061A3E563B6003F2E2BE21DE3639CF72 /* libPods-VoiceConvertDevApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		256FD9C9069244B8A20C1470EE8B5F2C /* VoiceConvert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50A7838688E13936642F257638523CE1 /* Build configuration list for PBXNativeTarget "VoiceConvert" */;
+			buildPhases = (
+				B654C51555BC89B71714CB7E72F63399 /* Sources */,
+				D1123CBF2D0A5F87BA9042246B197574 /* Frameworks */,
+				C4E20976C4669B8978AF519171417FA0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceConvert;
+			productName = VoiceConvert;
+			productReference = CD99209786923DBE01897F9BD6CB0535 /* libVoiceConvert.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DBC55730BE5691F72AFBBF30B700AF5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				013360C320A733D39D0688BC91CF9EF1 /* Pods-VoiceConvertDevApp */,
+				256FD9C9069244B8A20C1470EE8B5F2C /* VoiceConvert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B654C51555BC89B71714CB7E72F63399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C14F35C11ABB36DF2B034AB1E80B5C /* amrFileCodec.mm in Sources */,
+				493345EE732D3663D07C479D8AB31149 /* VoiceConvert-dummy.m in Sources */,
+				D568FFCA65BCD6FFBED8AE6209EFF401 /* VoiceConverter.mm in Sources */,
+				3ABD7B2E7760C130C3B518824DB136B4 /* wav.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30F99B3F02BD4089385111FAA76F1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295B6B6FBB6A6F621202FA795827966D /* Pods-VoiceConvertDevApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61FD2887935AFE4008A3C3CDFCCB7177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VoiceConvert;
+			target = 256FD9C9069244B8A20C1470EE8B5F2C /* VoiceConvert */;
+			targetProxy = 5BF1F1CCE00CC605BB9C0E1F101D463E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		052A17875CB827423D627183396CEB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BE0F74197692EBEC6871002C74727FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A590ED930C4D4F20FEDA66DDD53F17F0 /* VoiceConvert.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VoiceConvert/VoiceConvert-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9072F764BFFD7694AD26B0D7324A2146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A590ED930C4D4F20FEDA66DDD53F17F0 /* VoiceConvert.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VoiceConvert/VoiceConvert-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CD8B5769591B265896F6974E5240903F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D84005DB8A6DAB07CF9D8351CBFBF332 /* Pods-VoiceConvertDevApp.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EB9558930D550DE3A383269B9C40BEAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CFE50D73322F5599F809B55FBF6A4D /* Pods-VoiceConvertDevApp.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */,
+				052A17875CB827423D627183396CEB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50A7838688E13936642F257638523CE1 /* Build configuration list for PBXNativeTarget "VoiceConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9072F764BFFD7694AD26B0D7324A2146 /* Debug */,
+				3BE0F74197692EBEC6871002C74727FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F240E32B4A95DA9C1FCD1F2D404EA430 /* Build configuration list for PBXNativeTarget "Pods-VoiceConvertDevApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9558930D550DE3A383269B9C40BEAA /* Debug */,
+				CD8B5769591B265896F6974E5240903F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

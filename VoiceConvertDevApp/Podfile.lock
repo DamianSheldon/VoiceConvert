@@ -1,0 +1,14 @@
+PODS:
+  - VoiceConvert (0.0.1)
+
+DEPENDENCIES:
+  - VoiceConvert (from `../`)
+
+EXTERNAL SOURCES:
+  VoiceConvert:
+    :path: ../
+
+SPEC CHECKSUMS:
+  VoiceConvert: 30ae322b4d34b4803d2353cd628677701a001bb7
+
+COCOAPODS: 0.39.0
