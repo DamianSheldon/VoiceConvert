@@ -577,7 +577,6 @@
 					"-l\"VoiceConvert\"",
 					"-l\"opencore-amrnb\"",
 					"-l\"opencore-amrwb\"",
-					"-l\"stdc++\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hn122.VoiceConvertDevApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -600,7 +599,6 @@
 					"-l\"VoiceConvert\"",
 					"-l\"opencore-amrnb\"",
 					"-l\"opencore-amrwb\"",
-					"-l\"stdc++\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hn122.VoiceConvertDevApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

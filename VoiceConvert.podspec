@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VoiceConvert"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "VoiceConvert is a Cocoa Touch Static Library for converting between AMR and WAV."
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 	VoiceConvert convert AMR to WAV, vice versa. Android's default audio format is AMR, but iOS doesn't support it. When it comes to support cross platform we have to convertbetween AMR and WAV.
                    DESC
 
-  # s.homepage     = "http://EXAMPLE/VoiceConvert.podspec"
+  s.homepage     = "https://github.com/DamianSheldon/VoiceConvert/blob/master/VoiceConvert.podspec"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   s.platform     = :ios
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "6.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -120,7 +120,7 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  # s.library   = "iconv"
+  s.library   = "stdc++"
   # s.libraries = "iconv", "xml2"
   
   s.vendored_libraries = 'VoiceConvert/VoiceConvert/lib/*.a'

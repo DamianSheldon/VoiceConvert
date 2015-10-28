@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  VoiceConvert: 30ae322b4d34b4803d2353cd628677701a001bb7
+  VoiceConvert: b7dd3be6ffd2c54c8be5772773596c7d2c2d0f60
 
 COCOAPODS: 0.39.0
