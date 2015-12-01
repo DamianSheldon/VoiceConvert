@@ -1,20 +1,28 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DE109B41E2DBE5CA15C2CB7CCECD9C51532A68FC",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "eccd39b4-39d4-47ab-bb89-e81f4763b8b8++5109" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DE109B41E2DBE5CA15C2CB7CCECD9C51532A68FC" : 0,
     "eccd39b4-39d4-47ab-bb89-e81f4763b8b8++5109" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D58EE2FB-E8A1-427F-954C-000BAA910E8E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "eccd39b4-39d4-47ab-bb89-e81f4763b8b8++5109" : "VoiceConvertDevApp\/VoiceConvertDevApp\/VoiceRecorderVC\/"
+    "DE109B41E2DBE5CA15C2CB7CCECD9C51532A68FC" : "VoiceConvert\/",
+    "eccd39b4-39d4-47ab-bb89-e81f4763b8b8++5109" : "VoiceConvert\/VoiceConvertDevApp\/VoiceConvertDevApp\/VoiceRecorderVC\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "VoiceConvertDevApp",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VoiceConvertDevApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VoiceConvertDevApp\/VoiceConvertDevApp.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DamianSheldon\/VoiceConvert.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DE109B41E2DBE5CA15C2CB7CCECD9C51532A68FC"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.0.240\/repository",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",

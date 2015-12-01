@@ -63,7 +63,7 @@ int ReadPCMFrame(short speech[], FILE* fpwave, int nChannels, int nBitsPerSample
 	
 	if (nBitsPerSample==8 && nChannels==1)
 	{
-		nRead = fread(pcmFrame_8b1, (nBitsPerSample/8), PCM_FRAME_SIZE*nChannels, fpwave);
+		nRead = (int)fread(pcmFrame_8b1, (nBitsPerSample/8), PCM_FRAME_SIZE*nChannels, fpwave);
 		for(x=0; x<PCM_FRAME_SIZE; x++)
 		{
 			speech[x] =(short)((short)pcmFrame_8b1[x] << 7);
@@ -72,7 +72,7 @@ int ReadPCMFrame(short speech[], FILE* fpwave, int nChannels, int nBitsPerSample
 	else
 		if (nBitsPerSample==8 && nChannels==2)
 		{
-			nRead = fread(pcmFrame_8b2, (nBitsPerSample/8), PCM_FRAME_SIZE*nChannels, fpwave);
+			nRead = (int)fread(pcmFrame_8b2, (nBitsPerSample/8), PCM_FRAME_SIZE*nChannels, fpwave);
 			for( x=0, y=0; y<PCM_FRAME_SIZE; y++,x+=2 )
 			{
 				// 1 - 取两个声道之左声道
@@ -89,7 +89,7 @@ int ReadPCMFrame(short speech[], FILE* fpwave, int nChannels, int nBitsPerSample
 		else
 			if (nBitsPerSample==16 && nChannels==1)
 			{
-				nRead = fread(pcmFrame_16b1, (nBitsPerSample/8), PCM_FRAME_SIZE*nChannels, fpwave);
+				nRead = (int)fread(pcmFrame_16b1, (nBitsPerSample/8), PCM_FRAME_SIZE*nChannels, fpwave);
 				for(x=0; x<PCM_FRAME_SIZE; x++)
 				{
 					speech[x] = (short)pcmFrame_16b1[x+0];
@@ -98,7 +98,7 @@ int ReadPCMFrame(short speech[], FILE* fpwave, int nChannels, int nBitsPerSample
 			else
 				if (nBitsPerSample==16 && nChannels==2)
 				{
-					nRead = fread(pcmFrame_16b2, (nBitsPerSample/8), PCM_FRAME_SIZE*nChannels, fpwave);
+					nRead = (int)fread(pcmFrame_16b2, (nBitsPerSample/8), PCM_FRAME_SIZE*nChannels, fpwave);
 					for( x=0, y=0; y<PCM_FRAME_SIZE; y++,x+=2 )
 					{
 						//speech[y] = (short)pcmFrame_16b2[x+0];
@@ -154,7 +154,7 @@ int EncodeWAVEFileToAMRFile(const char* pchWAVEFilename, const char* pchAMRFileN
 		return 0;
 	}
 	/* write magic number to indicate single channel AMR file storage format */
-	bytes = fwrite(AMR_MAGIC_NUMBER, sizeof(char), strlen(AMR_MAGIC_NUMBER), fpamr);
+	bytes = (int)fwrite(AMR_MAGIC_NUMBER, sizeof(char), strlen(AMR_MAGIC_NUMBER), fpamr);
 	
 	/* skip to pcm audio data*/
 	SkipToPCMAudioData(fpwave);
@@ -261,8 +261,11 @@ int caclAMRFrameSize(unsigned char frameHeader)
 // 返回值: 0-出错; 1-正确
 int ReadAMRFrameFirst(FILE* fpamr, unsigned char frameBuffer[], int* stdFrameSize, unsigned char* stdFrameHeader)
 {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wsizeof-array-argument"
+#pragma clang diagnostic ignored "-Wsizeof-pointer-memaccess"
 	memset(frameBuffer, 0, sizeof(frameBuffer));
-	
+#pragma clang diagnostic pop
 	// 先读帧头
 	fread(stdFrameHeader, 1, sizeof(unsigned char), fpamr);
 	if (feof(fpamr)) return 0;
@@ -283,21 +286,23 @@ int ReadAMRFrame(FILE* fpamr, unsigned char frameBuffer[], int stdFrameSize, uns
 {
 	int bytes = 0;
 	unsigned char frameHeader; // 帧头
-	
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wsizeof-array-argument"
+#pragma clang diagnostic ignored "-Wsizeof-pointer-memaccess"
 	memset(frameBuffer, 0, sizeof(frameBuffer));
-	
+#pragma clang diagnostic pop
 	// 读帧头
 	// 如果是坏帧(不是标准帧头)，则继续读下一个字节，直到读到标准帧头
 	while(1)
 	{
-		bytes = fread(&frameHeader, 1, sizeof(unsigned char), fpamr);
+		bytes = (int)fread(&frameHeader, 1, sizeof(unsigned char), fpamr);
 		if (feof(fpamr)) return 0;
 		if (frameHeader == stdFrameHeader) break;
 	}
 	
 	// 读该帧的语音数据(帧头已经读过)
 	frameBuffer[0] = frameHeader;
-	bytes = fread(&(frameBuffer[1]), 1, (stdFrameSize-1)*sizeof(unsigned char), fpamr);
+	bytes = (int)fread(&(frameBuffer[1]), 1, (stdFrameSize-1)*sizeof(unsigned char), fpamr);
 	if (feof(fpamr)) return 0;
 	
 	return 1;

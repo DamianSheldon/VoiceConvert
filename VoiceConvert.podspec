@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VoiceConvert"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "VoiceConvert is a Cocoa Touch Static Library for converting between AMR and WAV."
 
   # This description is used to generate tags and improve search results.
